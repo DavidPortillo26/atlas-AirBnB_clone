@@ -2,7 +2,6 @@
 """This module is a set of unit tests for Amenity"""
 import unittest
 import os
-from models.engine.file_storage import FileStorage
 from models.amenity import Amenity
 
 my_model = Amenity()

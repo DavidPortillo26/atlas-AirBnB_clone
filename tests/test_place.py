@@ -1,9 +1,7 @@
 #!/usr/bin/python3
 """This module is a set of unit tests for Place"""
-
 import unittest
 import os
-from models.engine.file_storage import FileStorage
 from models.place import Place
 
 my_model = Place()
