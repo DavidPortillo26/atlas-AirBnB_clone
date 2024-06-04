@@ -29,7 +29,8 @@ def parse(arg):
         retl = [i.strip(",") for i in lexer]
         retl.append(curly_braces.group())
         return retl
-    
+
+
 class HBNBCommand(cmd.Cmd):
     """Defines the HolbertonBnB command interpreter.
     Attributes:
@@ -46,7 +47,6 @@ class HBNBCommand(cmd.Cmd):
         "Amenity",
         "Review"
     }
-    
     def emptyline(self):
         """Do nothing upon receiving an empty line."""
         pass
@@ -127,7 +127,7 @@ class HBNBCommand(cmd.Cmd):
         else:
             del objdict["{}.{}".format(argl[0], argl[1])]
             storage.save()
-            
+
     def do_all(self, arg):
         """Usage: all or all <class> or <class>.all()
         Display string representations of all instances of a given class.
