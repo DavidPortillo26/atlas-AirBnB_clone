@@ -29,8 +29,9 @@ def parse(arg):
         retl = [i.strip(",") for i in lexer]
         retl.append(curly_braces.group())
         return retl
-
-class HBNBCommand(cmd.Cmd):
+    
+    
+    class HBNBCommand(cmd.Cmd):
     """Defines the HolbertonBnB command interpreter.
     Attributes:
         prompt (str): The command prompt.
@@ -46,8 +47,8 @@ class HBNBCommand(cmd.Cmd):
         "Amenity",
         "Review"
     }
-
-     def emptyline(self):
+    
+    def emptyline(self):
         """Do nothing upon receiving an empty line."""
         pass
 

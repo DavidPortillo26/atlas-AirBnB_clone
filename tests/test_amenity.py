@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """This module is a set of unit tests for Amenity"""
-
 import unittest
 import os
 from models.engine.file_storage import FileStorage
