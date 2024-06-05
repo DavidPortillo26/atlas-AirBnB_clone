@@ -28,7 +28,8 @@ class BaseModel:
             models.storage.new(self)
 
     def save(self):
-        self.updated_at = datetime.today()
+        self.updated_at = datetime.datetime.now()
+        models.storage.new()
         models.storage.save()
 
     def to_dict(self):
